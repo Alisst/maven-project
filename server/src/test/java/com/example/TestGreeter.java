@@ -13,7 +13,7 @@ public class TestGreeter {
   private Greeter greeter;
 
   @Before
-  public void setup() {
+  public void setup()  {
     greeter = new Greeter();
   }
 
