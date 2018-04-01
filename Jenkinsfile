@@ -21,7 +21,7 @@ pipeline {
                 build job: 'deploy-to-staging-by-package-pipeline'
             }
         }
-        stage{
+        stage('Deploy to production'){
             steps{
                 timeout(time:5, unit:"DAYS"){
                     input message: 'Approve PRODUCTION Deployment?'
